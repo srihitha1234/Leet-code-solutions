@@ -1,6 +1,4 @@
 # Leet-code-solutions
-Dive into a rich collection of thoughtfully crafted solutions that unravel the intricacies of various coding challenges.
-Whether you're a beginner seeking foundational understanding or an experienced coder honing your skills, this repository provides a valuable resource to navigate through the complexities of LeetCode problems.
 Welcome to a treasure trove of coding excellence! 
 This repository is your go-to source for meticulously crafted solutions to a wide range of LeetCode questions, carefully curated to cover various difficulty levels. 
 Whether you're just starting out on your coding journey or looking to refine your skills, this collection offers a diverse array of solutions that cater to all proficiency levels.
