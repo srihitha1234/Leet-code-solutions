@@ -1,16 +1,22 @@
 class Solution {
 public:
     int findSpecialInteger(vector<int>& arr) {
-        unordered_map<int, int> co;
+        int candidate = arr[0];
+        int count = 1;
         int n = arr.size();
-        
-        for (int i = 0; i < n; i++) {
-            co[arr[i]]++;
-            if (co[arr[i]] > n / 4) {
-                return arr[i];
+
+        for (int i = 1; i < n; i++) {
+            if (arr[i] == candidate) {
+                count++;
+                if (count > n / 4) {
+                    return candidate;
+                }
+            } else {
+                candidate = arr[i];
+                count = 1;
             }
         }
-        
-        return -1;
+
+        return arr[0];
     }
 };
