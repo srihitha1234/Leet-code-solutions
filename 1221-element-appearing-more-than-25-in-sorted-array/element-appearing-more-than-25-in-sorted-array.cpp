@@ -7,7 +7,11 @@ public:
         for(int i=0;i<arr.size();i++)
         {
             if(co[arr[i]]>arr.size()/4)
+            {
+                co.clear();
                 return arr[i];
+            }
+                
         }
         return -1;
     }
