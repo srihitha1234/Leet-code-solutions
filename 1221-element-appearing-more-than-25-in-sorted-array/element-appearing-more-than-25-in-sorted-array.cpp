@@ -15,6 +15,7 @@ public:
             } else {
                 candidate = arr[i];
                 count = 1;
+                continue;
             }
         }
 
