@@ -11,6 +11,7 @@ public:
                 if (count > n / 4) {
                     return candidate;
                 }
+                continue;
             } else {
                 candidate = arr[i];
                 count = 1;
