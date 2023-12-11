@@ -1,22 +1,13 @@
 class Solution {
 public:
     int findSpecialInteger(vector<int>& arr) {
-        int candidate = arr[0];
-        int count = 1;
-        int n = arr.size();
-
-        for (int i = 1; i < n; i++) {
-            if (arr[i] == candidate) {
-                count++;
-                if (count > n / 4) {
-                    return candidate;
-                }
-            } else {
-                candidate = arr[i];
-                count = 1;
+        int size = arr.size() / 4;
+        for (int i = 0; i < arr.size() - size; i++) {
+            if (arr[i] == arr[i + size]) {
+                return arr[i];
             }
         }
-
-        return arr[0];
+        
+        return -1;
     }
 };
