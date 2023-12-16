@@ -7,10 +7,9 @@ public:
             return false;
         unordered_map<char,int> visited(26);
         for(int i=0;i<m;i++)
-            visited[s[i]]++;
-        for(int i=0;i<m;i++)
         {
-            visited[t[i]]--;
+            visited[s[i]]++;
+             visited[t[i]]--;
         }
         for(int i=0;i<m;i++)
         {
