@@ -5,10 +5,18 @@ public:
         int n=t.size();
         if(m!=n)
             return false;
-        sort(s.begin(),s.end());
-        sort(t.begin(),t.end());
-        if(s==t)
-            return true;
-        return false;
+        unordered_map<char,int> visited(26);
+        for(int i=0;i<m;i++)
+            visited[s[i]]++;
+        for(int i=0;i<m;i++)
+        {
+            visited[t[i]]--;
+        }
+        for(int i=0;i<m;i++)
+        {
+            if(visited[s[i]]!=0)
+                return false;
+        }
+        return true;
     }
 };
