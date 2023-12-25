@@ -10,8 +10,6 @@ public:
             int rem=x%10;
             rev=rev*10+rem;
             x=x/10;
-            if(rev>pow(2,31)-1)
-                return 0;
         }
         if(rev>pow(2,31)-1)
                 return 0;
