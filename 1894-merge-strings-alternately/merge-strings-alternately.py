@@ -10,5 +10,11 @@ class Solution:
             elif (k%2!=0 and j<len(word2)) or (i>=len(word1)):
                 word=word+word2[j]
                 j=j+1
+            elif i>=len(word1) :
+                word=word+word2[j]
+                j=j+1
+            else:
+                word=word+word1[i]
+                i=i+1
         return word
         
